@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Flower Store Custom Styles */
+@layer base {
+    body {
+        @apply antialiased;
+    }
+}
+
+@layer components {
+    /* Gradient Backgrounds */
+    .gradient-primary {
+        background: linear-gradient(135deg, #f9388a 0%, #e91e6e 100%);
+    }
+    
+    .gradient-secondary {
+        background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+    }
+    
+    .gradient-accent {
+        background: linear-gradient(135deg, #a855f7 0%, #9333ea 100%);
+    }
+    
+    .gradient-hero {
+        background: linear-gradient(135deg, #fee5f0 0%, #fef1f7 50%, #f3e8ff 100%);
+    }
+    
+    /* Button Styles */
+    .btn-primary {
+        @apply bg-primary-600 hover:bg-primary-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg;
+    }
+    
+    .btn-secondary {
+        @apply bg-secondary-600 hover:bg-secondary-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg;
+    }
+    
+    .btn-accent {
+        @apply bg-accent-600 hover:bg-accent-700 text-white font-medium py-2 px-4 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg;
+    }
+}
+
+/* RTL Support */
+[dir="rtl"] {
+    direction: rtl;
+}
+
+[dir="rtl"] .rtl\:text-right {
+    text-align: right;
+}
+
+[dir="rtl"] .rtl\:text-left {
+    text-align: left;
+}
+
+
